@@ -35,3 +35,10 @@ bootcamp = "yeni değer"
 console.log(bootcamp);
 
 /** var ve let ile tanımlanan değişkene yeni değer ataması yapılabilidr, bize herhangi bir hata vermez. */
+
+console.log("********** Const Veri Türleri **********")
+const deger = "string" //string
+const bool = true;     //boolean
+const num = 1;         //number
+const array = [];      //array
+const obj = {};        // obje
