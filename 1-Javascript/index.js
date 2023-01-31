@@ -73,3 +73,8 @@ const students = [
 	{ name: "mehmet", age: 17 },
 	{ name: "ali", age: 17 },
 ];
+
+
+console.log("********** Objeler **********")
+var student ={ name: "veli", age: 16 }
+console.log(student);
