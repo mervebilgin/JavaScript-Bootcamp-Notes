@@ -42,3 +42,34 @@ const bool = true;     //boolean
 const num = 1;         //number
 const array = [];      //array
 const obj = {};        // obje
+
+// Veri türlerinde sadece stringe boş değer ataması yapılabilir.
+// const javascript = ""
+
+/****** değişkenleri bu şekilde de tanımlayabiliriz *******/
+// const bool; 
+// const num;
+// let array; 
+// ancak bu veri türlerinin tipleri boolean veya number veri türü olmaz, undefined veri türü olur.
+
+
+console.log("********** Diziler **********")
+
+const array1 = [1, 2, 3, 4]; // number arrayi
+console.log(array1)
+
+const array2 = ["1", "2", "3", "4"]; // string arrayi
+console.log(array2)
+
+const array3 = ["1", 2, "3", 4]; // string-number arrayi
+console.log(array3)
+
+const array4 = [true, false, "3", 4]; // arrayin karışık türde itemleri olabilir
+console.log(array4)
+
+// obje arrayi
+const students = [
+	{ name: "ahmet", age: 17 },
+	{ name: "mehmet", age: 17 },
+	{ name: "ali", age: 17 },
+];
