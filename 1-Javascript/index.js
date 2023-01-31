@@ -18,3 +18,20 @@ Yukarda saydığımız işlemleri çok güçlü bir şekilde yapmamızı sağlay
 Browser üzerinde çalışır. Clientside uygulama olarak hayatımıza girdiyse de Node.js in çıkması ile birlikte artık backend tarafında da 
 JavaScript kullanılarak geliştirmeler yapılmaktadır. 
 */
+
+console.log("*********** Değişken Tanımlama ***********")
+
+const javascript = "";
+javascript = "yeni değer"
+console.log(javascript);
+/** const değeri değiştirilemez, const ile tanımlanan değişkenin ilk değerinden sonra o değere tekrar bir değer ataması bize hata verecektir*/
+
+var react = "react.js"
+react = "yeni değer"
+console.log(react);
+
+let bootcamp = "bootcamp"
+bootcamp = "yeni değer"
+console.log(bootcamp);
+
+/** var ve let ile tanımlanan değişkene yeni değer ataması yapılabilidr, bize herhangi bir hata vermez. */
