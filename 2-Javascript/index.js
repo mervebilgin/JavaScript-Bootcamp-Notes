@@ -22,8 +22,20 @@ JavaScript tarafında HTML elementlerimize ulaşmamızı sağlayan DOMdur.
 */
 
 const title = "Bootcamp From index.js";
-document.querySelector("#title").innerHTML = `<h1>${title}</h1>`;
+// document.querySelector("#title").innerHTML = `<h1>${title}</h1>`;
 /*
  JavaScripte bazı etiketleri, bazı dom elementlerinin sadece textlerini değiştirmek ile kalmayız, 
  içerisini bodysini komple değiştirmek istersek veya silmek istersek innerHTML kullanılabilir. 
 */
+
+const button = document.createElement("button");
+button.innerText = "button";
+
+const domTitle = document.querySelector("#title")
+domTitle.appendChild(button);
+
+// butona tıklandığında "tıklandı şeklinde bize bilgi verecektir"
+button.addEventListener("click", () => {
+  alert("tıklandı")
+})
+// Button aktif edildi, JavaScript tarafında Domu kullanarak programlamaya başlamış olduk.
