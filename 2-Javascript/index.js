@@ -79,3 +79,9 @@ case 3:
     console.log(`${val} ekrana yazdırıldı`)
     break;
 }
+
+/* ----- while decision structure -------*/
+while (val < 5) {
+  console.log(val);
+  val++;
+}
