@@ -39,3 +39,16 @@ button.addEventListener("click", () => {
   alert("tıklandı")
 })
 // Button aktif edildi, JavaScript tarafında Domu kullanarak programlamaya başlamış olduk.
+
+// Karar yapıları
+const counter = document.querySelector("#counterr");
+ 
+if (counter) {
+  counter.innerText = "Test";
+}
+// ---- dom içerisinde bulunmayan bir şeye bir şey atamaya çalışıyorunuz hatası vericektir.
+// ---- ancak biz if-else yapısı kullanırsak, else durumu için
+else {
+ console.log("error counter not defined")
+}
+// ---- yukarıdaki kod satırları bize lese durumunu döndürür, conter not defined
