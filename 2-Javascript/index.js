@@ -54,8 +54,17 @@ let val = 2;
 // }
 // ---- yukarıdaki kod satırları bize lese durumunu döndürür, conter not defined
 
+if(val > 3){
+  console.log("val 3 den büyük");
+}
+else if (val > 4){
+  console.log("val 4 den büyük");
+}
+else if (val >= 5){
+  console.log("val 5 den büyük veya 5'e eşit");
+}
 
-/* ----- switch-case decision structure ------- */
+/* ----- switch-case decision structure -------*/
 switch (val) {
   case 2:
     console.log("2 ekrana yazdırıldı")
