@@ -42,13 +42,31 @@ button.addEventListener("click", () => {
 
 // Karar yapıları
 const counter = document.querySelector("#counterr");
+let val = 2;
  
-if (counter) {
-  counter.innerText = "Test";
-}
+// if (counter) {
+//   counter.innerText = "Test";
+// }
 // ---- dom içerisinde bulunmayan bir şeye bir şey atamaya çalışıyorunuz hatası vericektir.
 // ---- ancak biz if-else yapısı kullanırsak, else durumu için
-else {
- console.log("error counter not defined")
-}
+// else {
+//  console.log("error counter not defined")
+// }
 // ---- yukarıdaki kod satırları bize lese durumunu döndürür, conter not defined
+
+
+/* ----- switch-case decision structure ------- */
+switch (val) {
+  case 2:
+    console.log("2 ekrana yazdırıldı")
+    break;
+case 3:
+    console.log("3 ekrana yazdırıldı")
+    break;
+  case 4:
+    console.log("4 ekrana yazdırıldı")
+    break;
+  default:
+    console.log(`${val} ekrana yazdırıldı`)
+    break;
+}
