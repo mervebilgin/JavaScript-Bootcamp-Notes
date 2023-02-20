@@ -63,7 +63,7 @@ const Person = function (name, age, gender) {
 /*
 **** Nasıl Kullanılır?
 #7 --- parametre alan ve geriye değer döndüren method
-*/
+
 
 function sum(a, b) {
   // bir şeyler yapılabilir
@@ -89,3 +89,24 @@ const Person = function (name, age, gender) {
 }
 const student = new Person("ahmet", 16, 1);
 console.log(student.toString())
+*/
+
+/* ---ECS6 Class yapısı*/
+// classlar özellik barındırabilir
+class Person2 {
+  name = ""
+  age = 0
+  constructor(name, age) {
+    this.name = name;
+    this.age = age
+  }
+
+  toString() {
+    return this.name + " " + this.age;
+  }
+  toString2 = () => { // arrow method yapısı
+    return this.name + " " + this.age
+  }
+}
+const human = new Person2("ali", 16);
+console.log(human.toString());
