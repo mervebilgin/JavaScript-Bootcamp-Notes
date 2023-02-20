@@ -59,3 +59,33 @@ const Person = function (name, age, gender) {
 }
 
 */
+
+/*
+**** Nasıl Kullanılır?
+#7 --- parametre alan ve geriye değer döndüren method
+*/
+
+function sum(a, b) {
+  // bir şeyler yapılabilir
+  return a + b;
+}
+const total = sum(1, 3);
+console.log("total", total);
+const total2 = sum(1, 5);
+console.log("total2", total2);
+
+//***********
+
+const Person = function (name, age, gender) {
+  const self = this;  // self thisi karşılıyor
+  self.name = name;   // this.name -> self karşılamasaydı eğer
+  self.age = age;
+  const _gender = gender; //dişarıdan erişilmeyen bir bilgi - private
+
+  self.getGender = () => _gender ? "Erkek" : "Kadın";
+  this.toString = function () { // dışarıdan erişilbilen bir method yardımı ile kullanıcıya gösterilebilir.
+    return self.name + " " + self.age + " " + self.getGender();
+  }
+}
+const student = new Person("ahmet", 16, 1);
+console.log(student.toString())
