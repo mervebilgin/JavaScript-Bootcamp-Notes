@@ -45,4 +45,17 @@ const function_name = function(param1, param2, param3) {
   console.log({param1, param2, param3})
 }
 
+#6 --- constructor method
+const Person = function (name, age, gender) {
+  const self = this;  // self thisi karşılıyor
+  self.name = name;   // this.name -> self karşılamasaydı eğer
+  self.age = age;
+  const _gender = gender; //dişarıdan erişilmeyen bir bilgi - private
+
+  self.getGender = () => _gender ? "Erkek" : "Kadın";
+  this.toString = function () { // dışarıdan erişilbilen bir method yardımı ile kullanıcıya gösterilebilir.
+    return self.name + " " + self.age + " " + self.getGender();
+  }
+}
+
 */
