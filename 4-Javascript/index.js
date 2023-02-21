@@ -91,7 +91,7 @@ const student = new Person("ahmet", 16, 1);
 console.log(student.toString())
 */
 
-/* ---ECS6 Class yapısı*/
+/* ---ECS6 Class yapısı
 // classlar özellik barındırabilir
 class Person2 {
   name = ""
@@ -110,3 +110,32 @@ class Person2 {
 }
 const human = new Person2("ali", 16);
 console.log(human.toString());
+
+*/
+
+/* --- Depolama işleminin yapılabilmesi için, 3 opsiyonumuz mevcuttur
+    * localStorage
+    * sessionStorage
+    * cookie
+    
+  --- Depolama Nedir?
+  Bizim bazı bilgilerimiz depolanır, cep telfonlarımızda uuygulamalarda, web sitelerinde ise browserda depolanır.
+  Uygulama geliştiricileri kullanıcının bilgilerini kendi bilgisayar veya uygulamalarında neden depolama ihtiyacı duyarlar?
+  örn:
+  instagrama bir kere giriş yapılıyor kullanıcı çıkış yapmayana kadar uygulama tekrar giriş bilgilerini istemiyor.
+  Bu depolama yöntemleri ile yapılmaktadır. 
+  Eğer bu yöntemler kullanılmasaydı her defasında instagrama tekrar giriş yapılacaktı, bu da kullanıcının istemediği bir durum olacaktı.
+  Depolama yöntemleri ile yerel olan bilgileri kullanabiliyoruz.
+
+  a) localStorage:Tamamen client tarafında çalışır. Sunucu localStorage deki bilgilere erişemez. 
+     Eğer task gibi bir şey çalıştırmıyorsak, kullanıcı localStorage deki bilgiyi silene kadar durur depolamaya devam eder. 
+
+  b) sessionStorage: Browserı her açtığımızda sessionstorage ye bir bilgi yazılır. Browserı kapattığımızda o bilgi silinir.
+
+  c) cookie: Belirli bir ömür vardır o ömrü geçene kaar bilgilerimiz orda duru.
+
+  sessionStorage ve cookie clientSide tarafında okuyabildiğimiz gibi backend tarafında da okuyabiliriz.
+  Ama localStorage daki bilgiyi backend tarafında okuyamayız. 
+
+* 
+*/
