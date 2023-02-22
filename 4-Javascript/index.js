@@ -137,5 +137,29 @@ console.log(human.toString());
   sessionStorage ve cookie clientSide tarafında okuyabildiğimiz gibi backend tarafında da okuyabiliriz.
   Ama localStorage daki bilgiyi backend tarafında okuyamayız. 
 
-* 
+
+* * * * * * * * * * * * * * * 
+  Kullanımları:
+* * * * * * * * * * * * * 
+*/
+// #1 - localStorage a bir şeyler ekleme
+window.localStorage.setItem("bootcamp", "javascript") //(key bigisi, )
+
+// #2 - localStorage ta belirtilen keydeki değeri silme
+window.localStorage.removeItem("bootcamp1")
+
+// #3 - localStorage taki bilgiye erişebilme
+const storage =  window.localStorage.getItem("bootcamp") // bootcamp keyinin valuesini bana getirsin
+// string veya olmadığı durumda da null bilgisi döner
+console.log(storage) // javascript bilgsi consolda görüntülenir
+
+// #4 - localStorage taki bilginin tümünü silme 
+window.localStorage.clear()
+
+/*
+client side ve server side nedir?
+Kullanıcı ile etkileşime geçmek için dinamik web siteleri programlanırken yazdığımız kodların bir kısmı Server Side (Sunucu Taraflı) 
+bir kısmı ise Client Side (İstemci Taraflı) çalışmaktadır.Daha açıklayıcı olmak gerekirse işlemler web sayfasının çağrıldığı istemci 
+bilgisayarında yapılıp sonuçlar sunucuya gönderiliyorsa Client Side, istemciden aldığı verilerle işlemler sunucuda yapılıp sonuç istemciye 
+gönderiliyorsa Server Side taraflı programlamadır.
 */
