@@ -3,6 +3,8 @@ const form = document.querySelector("#contact");
 
 if (form) {
   form.addEventListener("submit", function (event) {
+    
+    // preventDefault: buttona basıldıktıan sonra sayfayı freshleme
     event.preventDefault();
     const contactForm = event.currentTarget;
     const formData = new FormData(contactForm);
@@ -10,11 +12,14 @@ if (form) {
     const phone = formData.get("phone");
     const message = formData.get("message");
     console.log({ name, phone, message });
-    // BE ye formu gönderdim
-    // response eğer true
+    // formumun içerisndeki bütün bilgileri okuyup apilere (sunucu)-backend gönderebilirim
+    // sunucu tarafı da bu apilerin bilgilerini kaydedebilir.
+    
+    // response eğer true// repone mizi backend servislerimizden alırız
     const response = true;
     if (response) {
       contactForm.reset();
+      // mesjımız oluşturuluyor
       alert("Talebiniz başarıyla alındı");
     }
   });
@@ -22,6 +27,6 @@ if (form) {
 
 /*
   debugger:
-  browserda debuggerin ilevi iptal edilmediği sürece 4. satırda form subnit olduğunda durcak.
+  browserda debuggerin işlevi iptal edilmediği sürece 4. satırda form subnit olduğunda durcak.
 */ 
 
