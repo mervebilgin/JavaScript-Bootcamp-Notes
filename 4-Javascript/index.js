@@ -162,4 +162,11 @@ Kullanıcı ile etkileşime geçmek için dinamik web siteleri programlanırken 
 bir kısmı ise Client Side (İstemci Taraflı) çalışmaktadır.Daha açıklayıcı olmak gerekirse işlemler web sayfasının çağrıldığı istemci 
 bilgisayarında yapılıp sonuçlar sunucuya gönderiliyorsa Client Side, istemciden aldığı verilerle işlemler sunucuda yapılıp sonuç istemciye 
 gönderiliyorsa Server Side taraflı programlamadır.
+
+sessionStorage: client side ve server side tarafından erişilebilen bir storage türüdür.
+*/
+
+// * * * * * * * * * * * * * * * * *
+/*
+
 */
