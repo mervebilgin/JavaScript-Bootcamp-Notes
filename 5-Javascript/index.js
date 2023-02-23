@@ -30,7 +30,10 @@ const render = () => {
         const li = document.createElement("li"); // oluşturulmuş olan li - leri ul-nin child ına veriyoruz
 
         // linin innerTextine item.name ve item.age verdik
-        li.innerText = item.name + " " + item.age
+        // li.innerText = item.name + " " + item.age
+        // --- boşluk bırakma yöntemi ---
+        li.innerText = `${item.name} ${item.age}`
+
 
         // ul ye li append edilmiş oldu
         ul.appendChild(li)
