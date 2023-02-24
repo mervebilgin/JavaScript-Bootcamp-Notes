@@ -23,6 +23,26 @@ const data = [
 const todosUrl = "https://jsonplaceholder.typicode.com/todos"
 const root = document.querySelector("#root");
 
+const renderTodos = () => {
+  // todoları api'lerden al
+  // todoları listele
+  fetch(todosUrl).then(resp => { // response nesnesi
+    console.log(resp)
+  })
+}
+/*
+  yani json placeholderdan bir requestimiz oldu bize yine response döndü json placeholder apileri
+*/
+renderTodos();
+/*
+  fetch() methodu: apiler ile haberleşmemizi sağlayan native olarak browserımızın 
+  bize sunmuş olduğu bir metotdur.
+  fetch() metodu yardımı ile apiler ile haberleşebiliriz.
+  json - text datalar alabiliriz, ya da bu dataları apilere gönderebiliriz. 
+  browaerın kendi özelliği olarak eklendi.
+  * asenkron çalışır.
+*/
+
 const errorLogger = (error) => {
   console.log({error});
 }
