@@ -31,11 +31,16 @@ const render = () => {
   };
 
   try {
-    
-  } catch (error) {
-    
+    root.appendChild(ul);
+  } catch (error) { 
+   errorLogger(error);
   }
-
-  root.appendChild(ul); 
 };
 render();
+
+// hataları loglamak için kullanılır.
+// api'ler yardımıyla loglayabiliriz.
+// bu logları mönitör edebilmek için hataları loglamamız gereklidir.
+const errorLogger = (error) => {
+  console.log({error});
+}
