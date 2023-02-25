@@ -1,0 +1,4 @@
+Bootsrap nedir?
+Twitter tarafından geliştrilmiş nir css frameworkü, kütüphanaesi. Uygulama geliştirilirken bazı renk paletleri veya bazı standart button görüntülerine sahip olabiliriz.
+Twitterın bootstrapı geliştirmede baz aldığı en önemli özellik responsive tasarımdır. Bootstrap sayesinde daha kolay bir şekilde respponsive tasarımlar yapabiliyoruz. 
+
