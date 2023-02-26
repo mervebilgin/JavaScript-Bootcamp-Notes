@@ -1,3 +1,5 @@
+renderHeader({activePage: "todos.html"})
+
 const data = [
   { name: "bilge", age: 24, gender: "kadın" },
   { name: "hamza", age: 15, gender: "erkek" },
