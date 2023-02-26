@@ -30,13 +30,13 @@ const renderHeader = ({activePage = "index.html"}) => { //activePage: bir tane o
               <a class="nav-link ${activePage === "index.html" ? "active": ""}" aria-current="page" href="index.html">Anasayfa</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">Hakkımızda</a>
+              <a class="nav-link ${activePage === "about.html" ? "active": ""}" href="about.html">Hakkımızda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">İletişim</a>
+              <a class="nav-link ${activePage === "contact.html" ? "active": ""}" href="contact.html">İletişim</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="todos.html">Yapılacaklar</a>
+              <a class="nav-link  ${activePage === "todos.html" ? "active": ""}" href="todos.html">Yapılacaklar</a>
             </li>
           </ul>
         </div>
@@ -44,4 +44,10 @@ const renderHeader = ({activePage = "index.html"}) => { //activePage: bir tane o
     </nav>
     
     `;
+
+    document.querySelector("#navbar").innerHTML = template; // templateyi document querySelector id si navbar olan inner html ine veriyoruz.
 };
+
+// ${activePage === "index.html" ? "active": ""} --> sayfaların aktif olup olmama durumunun sorgulanması
+// -- index.html e eşitse active classına ekleyecek, değilse herhangi bir classa eklemesine gerek yok
+// elimizde bir templatemiz var ve bunu dinamik olarak değiştirebiliyoruz
