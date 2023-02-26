@@ -1,12 +1,5 @@
 renderHeader({activePage: "todos.html"})
 
-const data = [
-  { name: "bilge", age: 24, gender: "kadın" },
-  { name: "hamza", age: 15, gender: "erkek" },
-  { name: "evin", age: 20, gender: "kadın" },
-  { name: "zeliha", age: 18, gender: "kadın" },
-];
-
 const todosUrl = "https://jsonplaceholder.typicode.com/todos";
 const root = document.querySelector("#root");
 
