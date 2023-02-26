@@ -48,6 +48,11 @@ const renderHeader = ({activePage = "index.html"}) => { //activePage: bir tane o
     document.querySelector("#navbar").innerHTML = template; // templateyi document querySelector id si navbar olan inner html ine veriyoruz.
 };
 
+// common.js gloal olarak ortak kullanabileceğimiz kütüphane görevi görür
+const errorLogger = (error) => {
+  console.log({ error });
+};
+
 // ${activePage === "index.html" ? "active": ""} --> sayfaların aktif olup olmama durumunun sorgulanması
 // -- index.html e eşitse active classına ekleyecek, değilse herhangi bir classa eklemesine gerek yok
 // elimizde bir templatemiz var ve bunu dinamik olarak değiştirebiliyoruz
