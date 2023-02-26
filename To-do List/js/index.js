@@ -1,1 +1,1 @@
-renderHeader()
+renderHeader({activePage: "index.html"})
