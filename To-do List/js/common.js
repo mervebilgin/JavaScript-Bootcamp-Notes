@@ -1,0 +1,47 @@
+// tüm syafaları common.js e import edelim, yazılan html klasöründeki kodların tekrarını önlemek için
+
+// console.log("common.js") // common.js consolda gözükür, dolayısıyla common.js i kullanabiliriz
+
+// Amacımız common.js te html deki navbarı yönetebilmek
+
+const renderHeader = ({activePage = "index.html"}) => { //activePage: bir tane obje içerisinde property gelecek, defaultu index.html
+  // Arrow bir method
+
+  // templatemiz string bir template olacak, html imizi o kısma yazacaz
+  // backtick in içine yazacaz, çünkü tüm kod satırını stringleştirme işlemi yapabiliyor olacaz
+  const template = `
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">To-Do List</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link ${activePage === "index.html" ? "active": ""}" aria-current="page" href="index.html">Anasayfa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Hakkımızda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">İletişim</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="todos.html">Yapılacaklar</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    `;
+};
