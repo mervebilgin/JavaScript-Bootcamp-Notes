@@ -4,7 +4,8 @@
 
 // Amacımız common.js te html deki navbarı yönetebilmek
 
-const renderHeader = ({ activePage = "index.html" }) => {
+const renderHeader = ({ }) => {
+  const activePage = window.location.pathname;
   //activePage: bir tane obje içerisinde property gelecek, defaultu index.html
   // Arrow bir method
 
