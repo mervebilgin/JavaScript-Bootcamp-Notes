@@ -33,6 +33,18 @@ const sendform = function (event) {
   };
   // bu parametreleri apiye gönderiyoruz
 
+  const response = true;
+  if (response) {
+    // sonuç başarılı ise kullanıcıya başarılı bilgisi ver
+    // formu' resetle
+    alert("mesaj başarılı bir şekilde alındı.");
+    frm.reset();
+  } else {
+    // sonuç başarısız ise kullanıcıya başarısız bilgisi ver
+    alert(
+      "bir problem oluştu mesajınızı alamadık lütfen daha sonra tekrar deneyin."
+    );
+  }
 };
 
 renderContactForm();
