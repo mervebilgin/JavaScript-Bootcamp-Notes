@@ -19,4 +19,20 @@ const renderContactForm = function () {
   `;
   form.innerHTML = template;
   root.appendChild(form);
+  form.addEventListener("submit", sendform);
 };
+
+const sendform = function (event) {
+  event.preventDefault(); // formu submit ettiğinde sayfa yeniden yüklenecek
+  const frm = event.currentTarget; // currentTarget: yukarda oluşturulan formun kendisi
+  const formData = new FormData(frm); // formData nesnesinden bir intance alıyoruz
+  const parameters = { // email ve mesaj bilgisini objenin içerisinde beliticez
+    email: formData.get("email"), 
+    message: formData.get("message"),
+    // formData nesnesinden get ile email ve message bilgisini alıyoruz
+  };
+  // bu parametreleri apiye gönderiyoruz
+
+};
+
+renderContactForm();
