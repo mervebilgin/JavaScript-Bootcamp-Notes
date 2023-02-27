@@ -15,3 +15,24 @@ Benzersiz kaynak tanımlayıcısı
 Sunucu, her bir kaynağı benzersiz kaynak tanımlayıcılarla tanımlar. REST hizmetlerinde sunucu, kaynak tanımlamasını genellikle Tekdüzen Kaynak Konum Belirleyicisi'ni (URL) kullanarak 
 gerçekleştirir. URL, kaynağa giden yolu belirtir. URL, herhangi bir web sayfasını ziyaret etmek için tarayıcınıza girdiğiniz web sitesi adresine benzer. URL'ye aynı zamanda istek uç 
 noktası adı da verilir ve URL, istemcinin ne gerektirdiğini sunucuya açıkça belirtir.
+
+Yöntem
+Geliştiriciler, RESTful API'leri genellikle Köprü Metin Aktarım Protokolü'nü (HTTP) kullanarak uygular. Bir HTTP yöntemi, sunucuya kaynağa ne yapması gerektiğini söyler. Başlıca dört HTTP yöntemi şunlardır:
+
+GET
+
+İstemciler, sunucuda belirtilen URL'de yer alan kaynaklara erişmek için GET isteğini kullanır. İstemciler, GET isteklerini önbelleğe alabilir ve sunucuya verileri göndermeden önce filtreleme 
+talimatı vermek için RESTful API isteğinde parametreler gönderebilir.
+
+POST
+
+İstemciler, verileri sunucuya göndermek için POST isteğini kullanır. Veri gösterimini de isteğe dahil ederler. Aynı POST isteğini birden fazla kez göndermek, aynı kaynağın birden fazla kez 
+oluşturulmasına neden olur.
+
+PUT
+
+İstemciler, sunucudaki mevcut kaynakları güncellemek için PUT yöntemini kullanır. POST'un aksine, RESTful web hizmetinde aynı PUT isteğini birden fazla kez göndermek aynı sonucu doğurur.
+
+DELETE
+
+İstemciler, kaynağı kaldırmak için DELETE isteğini kullanır. Bir DELETE isteği, sunucunun durumunu değiştirebilir. Bununla birlikte, kullanıcı uygun kimlik doğrulamasına sahip değilse istek başarısız olur.
