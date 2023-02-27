@@ -36,3 +36,26 @@ PUT
 DELETE
 
 İstemciler, kaynağı kaldırmak için DELETE isteğini kullanır. Bir DELETE isteği, sunucunun durumunu değiştirebilir. Bununla birlikte, kullanıcı uygun kimlik doğrulamasına sahip değilse istek başarısız olur.
+
+
+RESTful API sunucu yanıtı neleri içerir?
+REST ilkeleri, sunucu yanıtının şu ana bileşenleri içermesini gerektirir:
+
+Durum satırı
+Durum satırı, isteğin başarılı veya başarısız olduğunu belirten üç haneli bir durum kodu içerir. Örneğin, 2XX kodları başarıyı ifade ederken 4XX ve 5XX kodları hataları belirtir. 3XX kodları ise URL yönlendirmesini ifade eder.
+
+Başlıca durum kodlarından bazıları aşağıdaki gibidir:
+
+200: Genel başarı yanıtı
+201: POST yöntemi başarılı yanıtı
+400: Sunucunun işleyemediği yanlış istek
+404: Kaynak bulunamadı
+
+Mesaj gövdesi
+Yanıt gövdesi, kaynak gösterimini içerir. Sunucu, istek üst bilgilerinin ne içerdiğine bağlı olarak uygun bir gösterim formatı seçer. İstemciler, bilgileri verilerin düz metin olarak nasıl yazılacağını tanımlayan XML veya JSON 
+formatında talep edebilir. Örneğin, istemci Can adında bir kişinin adını ve yaşını talep ederse sunucu, aşağıdaki gibi bir JSON gösterimi sunar:
+
+'{"ad":"Can", "yaş":30}'
+
+Üst Bilgiler
+İstek, yanıtla ilgili üst bilgileri veya meta verileri de içerir. Bunlar, yanıt hakkında daha fazla bağlam sunar ve sunucu, kodlama, tarih ve içerik türü gibi bilgileri de içerir.
