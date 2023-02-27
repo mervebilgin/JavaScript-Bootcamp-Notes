@@ -4,7 +4,8 @@
 
 // Amacımız common.js te html deki navbarı yönetebilmek
 
-const renderHeader = ({activePage = "index.html"}) => { //activePage: bir tane obje içerisinde property gelecek, defaultu index.html
+const renderHeader = ({ activePage = "index.html" }) => {
+  //activePage: bir tane obje içerisinde property gelecek, defaultu index.html
   // Arrow bir method
 
   // templatemiz string bir template olacak, html imizi o kısma yazacaz
@@ -25,27 +26,35 @@ const renderHeader = ({activePage = "index.html"}) => { //activePage: bir tane o
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link ${activePage === "index.html" ? "active": ""}" aria-current="page" href="index.html">Anasayfa</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link ${activePage === "about.html" ? "active": ""}" href="about.html">Hakkımızda</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link ${activePage === "contact.html" ? "active": ""}" href="contact.html">İletişim</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link  ${activePage === "todos.html" ? "active": ""}" href="todos.html">Yapılacaklar</a>
-            </li>
-          </ul>
+        <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link ${
+            activePage.includes("index.html") ? "active" : ""
+          }" href="index.html">Ana Sayfa</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ${
+            activePage.includes("about.html") ? "active" : ""
+          }" href="about.html">Hakkımızda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ${
+            activePage.includes("contact.html") ? "active" : ""
+          }" href="contact.html">İletişim</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ${
+            activePage.includes("todos.html") ? "active" : ""
+          }" href="todos.html">Yapılacaklar</a>
+        </li>
+      </ul>
         </div>
       </div>
     </nav>
     
     `;
 
-    document.querySelector("#navbar").innerHTML = template; // templateyi document querySelector id si navbar olan inner html ine veriyoruz.
+  document.querySelector("#navbar").innerHTML = template; // templateyi document querySelector id si navbar olan inner html ine veriyoruz.
 };
 
 // common.js gloal olarak ortak kullanabileceğimiz kütüphane görevi görür
