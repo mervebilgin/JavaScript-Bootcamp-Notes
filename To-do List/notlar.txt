@@ -2,3 +2,16 @@ Bootsrap nedir?
 Twitter tarafından geliştrilmiş nir css frameworkü, kütüphanaesi. Uygulama geliştirilirken bazı renk paletleri veya bazı standart button görüntülerine sahip olabiliriz.
 Twitterın bootstrapı geliştirmede baz aldığı en önemli özellik responsive tasarımdır. Bootstrap sayesinde daha kolay bir şekilde respponsive tasarımlar yapabiliyoruz. 
 
+RESTful API Nedir?
+RESTful API, iki bilgisayar sisteminin internet üzerinden güvenli bir şekilde bilgi alışverişi yapmak için kullandığı bir arabirimdir. Çoğu iş uygulaması, çeşitli görevleri 
+gerçekleştirmek için diğer dahili ve üçüncü taraf uygulamalarla iletişim kurmak zorundadır. Örneğin, aylık olarak maaş bordroları oluştururken faturalandırmayı otomatik hale 
+getirmek ve dahili bir zaman çizelgesi uygulamasıyla iletişimde olmak için dahili hesap sisteminizin, verileri müşterinin bankacılık sistemiyle paylaşması gerekir. 
+RESTful API'ler; güvenli, güvenilir ve verimli yazılım iletişim standartlarını izlediğinden bu bilgi alışverişini destekler.
+
+
+RESTful API istemci isteği neleri içerir?
+
+Benzersiz kaynak tanımlayıcısı
+Sunucu, her bir kaynağı benzersiz kaynak tanımlayıcılarla tanımlar. REST hizmetlerinde sunucu, kaynak tanımlamasını genellikle Tekdüzen Kaynak Konum Belirleyicisi'ni (URL) kullanarak 
+gerçekleştirir. URL, kaynağa giden yolu belirtir. URL, herhangi bir web sayfasını ziyaret etmek için tarayıcınıza girdiğiniz web sitesi adresine benzer. URL'ye aynı zamanda istek uç 
+noktası adı da verilir ve URL, istemcinin ne gerektirdiğini sunucuya açıkça belirtir.
